@@ -31,7 +31,9 @@ We provide (Dropbox) links below to download R source codes and related supporti
 ### Tables
 * Table 1 -- The proportion of variation in log(phi_MOM) explained by the fitted gamma log-linear, quadratic and cubic regression models: [Download R file](https://www.dropbox.com/s/xpln6q881lf35z2/Table1.R?dl=0)
 * Table 2 -- Estimated level of residual dispersion variation in five real RNA-Seq datasets: [Download R file and results](https://www.dropbox.com/sh/iab5id4xabvanlf/AABMi4f88fRUby0pfc01CqxGa?dl=0)
+* Table 3 -- (descriptive information; no R programming)
 * Table 4 -- Actual FDR for a nominal FDR of 0.1: [Download R file and results](https://www.dropbox.com/sh/6yb42xlsviujjz2/AACTIt4OXx9E0EuT0YU0el5Ja?dl=0)
+* Table 5 -- (descriptive information; no R programming)
 * Table 6 -- Calibrated sigma.tilde values for the five real datasets: [Download R file and results](https://www.dropbox.com/sh/jvj4m34od6fxqpd/AAByRUqkFsPqiSCztlGBtbLFa?dl=0)
 
 ******
