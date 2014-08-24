@@ -21,7 +21,7 @@ We provide (Dropbox) links below to download R source codes and related supporti
 ### Figures
 
 * Figure 1 -- Mean-dispersion plots for the human RNA-Seq dataset: [Download R file](https://www.dropbox.com/s/ya5qyu0fdvee80o/Figure1.R?dl=0)
-* Figure 2 -- True Positive Rate (TPR) vs. False Discovery Rate (FDR) plots for the six DE test methods performed on RNA-Seq datasets simulated to mimic real datasets:[Download R files and results](https://www.dropbox.com/sh/id5kcn43w2nyiul/AAD2H0dDbTaukg3GG1yWq9Ara?dl=0)
+* Figure 2 -- True Positive Rate (TPR) vs. False Discovery Rate (FDR) plots for the six DE test methods performed on RNA-Seq datasets simulated to mimic real datasets: [Download R files and results](https://www.dropbox.com/sh/id5kcn43w2nyiul/AAD2H0dDbTaukg3GG1yWq9Ara?dl=0)
 * Figure 3 -- Histograms of p-values for the non-DE genes from the six DE test methods: [Download R file](https://www.dropbox.com/s/yshd4zfar3h867m/Figure3.R?dl=0)
 * Figure 4 -- Histograms of p-values for the non-DE genes from the six DE test methods: [Download R file](https://www.dropbox.com/s/vyfrmcvm8hnpysn/Figure4.R?dl=0)
 * Figure 5 -- MA plots for the trended, genewise, tagwise-trend and QLSpline methods performed on the mouse dataset: [Download R files](https://www.dropbox.com/sh/8ryud7hdo51gx4f/AADYePWYDiF4kQs6qvS4u1oEa?dl=0)
