@@ -3,11 +3,11 @@ SeqDisp
 
 ### Power-Robustness Analysis of Statistical Models for RNA Sequencing (RNA-Seq) Data
 
-`SeqDisp` is an R package for evaluating the negative binomial dispersions methods commonly used in RNA-Seq data analysis. The methodologies are discussed in the manuscript **Power-Robustness Analysis of Statistical Models for RNA Sequencing Data** (under review). Functions in `SeqDisp` have been used to generate all figures and tables displayed in the manuscript, plus some additional analysis tools for further investigations.
+`SeqDisp` is an R package for evaluating the negative binomial dispersions methods commonly used in RNA-Seq data analysis. The methodologies are discussed in the manuscript **Power-Robustness Analysis of Statistical Models for RNA Sequencing Data** (by Gu Mi and Yanming Di, under review). Functions in `SeqDisp` have been used to generate all figures and tables displayed in the manuscript, plus some additional analysis tools for further investigations.
 
 ******
 
-We provide (Dropbox) links below to download R source codes and related supporting files for preparing the datasets and reproducing figures/tables in the manuscript. Typically the final figure outputs are not included as they are already shown in the manuscript, but other key results are provided when necessary.
+We provide (Dropbox) links below to download R source codes and related supporting files for preparing the datasets and reproducing figures/tables in the manuscript. Typically the final figure outputs are not included as they are already shown in the manuscript, but other key results are also provided when necessary.
 
 ### Data Preparations
 
