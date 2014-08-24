@@ -1,0 +1,29 @@
+Package: SeqDisp
+Type: Package
+Title: Evaluations of Negative Binomial Dispersion Models for RNA Sequencing
+    Data
+Description: An R package for evaluating the negative binomial dispersions
+    models commonly used in RNA-Seq data analysis.
+Version: 0.1.6
+Date: 2014-08-24
+License: GPL-2
+Author: Gu Mi <neo.migu@gmail.com>, Yanming Di <diy@stat.oregonstate.edu>,
+    Daniel Schafer <schafer@science.oregonstate.edu>
+Maintainer: Gu Mi <neo.migu@gmail.com>
+Depends:
+    R (>= 3.0.0)
+Imports:
+    NBPSeq (>= 0.3.5)
+X.edgeR.....3.6.2..: edgeR (>= 3.6.2)
+X.QuasiSeq.....1.0.4..: QuasiSeq (>= 1.0-4)
+X.splines.....3.0.0..: splines (>= 3.0.0)
+X.numDeriv.....2012.3.1..: numDeriv (>= 2012.3-1)
+X.ggplot2.....0.9.2..: ggplot2 (>= 0.9.2)
+X.plyr.....1.8.1..: plyr (>= 1.8.1)
+X.dplyr.....0.1.3..: dplyr (>= 0.1.3)
+X.scales.....0.2.3..: scales (>= 0.2.3)
+X.grid.: grid
+LazyData: yes
+LazyLoad: yes
+URL: https://github.com/gu-mi/SeqDisp
+BugReports: https://github.com/gu-mi/SeqDisp/issues
