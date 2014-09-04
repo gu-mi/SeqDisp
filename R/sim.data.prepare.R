@@ -10,7 +10,7 @@
 #' 
 #' @param grp.ids  group ids to distinguish between the two groups
 #' 
-#' @param disp  the dispersion type to be simulated. Specify "Linear", "Quadratic" or "Non-parametric"
+#' @param disp  the dispersion type to be simulated. Specify "Quadratic" by default
 #' 
 #' @param method  estimation method for dispersion, either "ML" or "MAPL" (default is "MAPL")
 #' 
@@ -113,40 +113,15 @@ sim.data.prepare = function(dt=NULL,
   
   # if we perform the simulation for the 1st time, we need to obtain the dispersion estimates and save for later use
   if (init.fit) {
-    
-#     # simulate LINEAR dispersion trend from a real RNA-Seq dataset
-#     if (disp == "Linear") {
-#       nbp = estimate.dispersion(nb.prep, x = x, model="NBP", method="MAPL")
-#       save(nbp, file=file.path(out.path, "nbp.RData"))
-#       alphas = nbp$model$par
-#     }
-    
-    # simulate QUADRATIC dispersion trend from a real RNA-Seq dataset
-    if (disp == "Quadratic") {
-      nbq.dispersion = estimate.dispersion(nb.data, x = x, model="NBQ", method=method)
-      save(nbq, file=file.path(out.path, "nbq.RData"))
-      alphas = nbq$model$par
-    }
+    nbq.dispersion = estimate.dispersion(nb.data, x = x, model="NBQ", method=method)
+    save(nbq.dispersion, file=file.path(out.path, "nbq.dispersion.RData"))
   }
+  # then, every time, load into R session: nbq.dispersion.RData
+  load(file=file.path(out.path, "nbq.dispersion.RData"))
   
   # generate mu
   pi = t(exp(x %*% t(beta)))
   mu = s * pi
-  
-#   # simulate (noised) dispersions according to the LINEAR dispersion model pre-estimated
-#   if (disp == "Linear"){
-#     load(file=file.path(out.path, "nbp.RData"))
-#     z = log(pi[ ,1] / nbp$model$pi.offset)   # use first group rel.freq here... a vector, not a matrix
-#     log.phi.mean = cbind(1, z) %*% nbp$model$par
-#     phi = exp(log.phi.mean)
-#     # plot(pi[,1], phi, log="xy")  # sanity check
-#     if (sigma != 0){
-#       set.seed(seed)
-#       phi.noi.vec = phi * exp(rnorm(m, 0, sigma))
-#       phi = matrix(phi.noi.vec, nr=m, nc=n)
-#       # plot(pi, phi, log="xy")  # sanity check
-#     }
-#   }
   
   # simulate (noised) dispersions according to the QUADRATIC dispersion model pre-estimated
   if (disp == "Quadratic"){
@@ -163,26 +138,8 @@ sim.data.prepare = function(dt=NULL,
       #points(pi[,1], exp(log.phi.mean), col="red")  # true dispersions
     }
   }
-  
-#   # simulate (noised) dispersions according to the NON-PARAMETRIC dispersion model estimated
-#   if (disp == "Non-parametric"){
-#     trd = dispBinTrend(dt.sub)
-#     # names(trd)  # "AveLogCPM"      "dispersion"     "bin.AveLogCPM"  "bin.dispersion"
-#     ave.log.cpm = trd$AveLogCPM
-#     phi = trd$dispersion  # phi without noise
-#     if (sigma != 0){
-#       set.seed(seed)
-#       phi.noi.vec = phi * exp(rnorm(m, 0, sigma))
-#       phi = matrix(phi.noi.vec, nr=m, nc=n)
-#     }
-#     # for plotting purpose:
-#     id = order(ave.log.cpm)
-#     ave.log.cpm.ord = ave.log.cpm[id]
-#     phi.ord = phi[id]
-#     # plot(ave.log.cpm, phi, log="y")  # sanity check
-#   }  
 
-  # generate responses from Linear, Quadratic or Non-parametric dispersion models
+  # generate responses from Quadratic dispersion model
   set.seed(seed)
   y = rnbinom(m * n, mu=mu, size=1/phi)
   dim(y) = dim(mu)
@@ -194,11 +151,5 @@ sim.data.prepare = function(dt=NULL,
   y[zero.idx, ] = 1
   
   # return quantities as a list
-  if (disp != "Non-parametric"){
-    return(list(counts=y, design=x, lib.sizes = s, idx.DE = idx.DE, perc.de = perc.de, m=m, n=n, phi = phi, pi = pi))
-  }
-#   if (disp == "Non-parametric"){
-#     return(list(counts=y, design=x, lib.sizes = s, idx.DE = idx.DE, perc.de = perc.de, m=m, n=n, phi = phi, pi = pi,
-#                 ave.log.cpm = ave.log.cpm, ave.log.cpm.ord = ave.log.cpm.ord, phi.ord = phi.ord))
-#   }
+  return(list(counts=y, design=x, lib.sizes = s, idx.DE = idx.DE, perc.de = perc.de, m=m, n=n, phi = phi, pi = pi))
 }

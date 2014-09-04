@@ -6,8 +6,8 @@
 pl.tpr.fdr(dt = NULL, sub.col = 1:6, grp.ids = c(rep(1,
   length(sub.col)/2), rep(2, length(sub.col)/2)), disp.vec = NULL,
   init.fit = TRUE, m = 5000, n = 6, s = 1e+07, de.vec = 0.2,
-  fc.vec = log(3), noise.vec = 0, legend.just = c(0, 1), x.limit = c(0,
-  1), seed = 539, out.path = getwd(), model.vec = NULL)
+  fc.vec = 2, noise.vec = 0, legend.just = c(0, 1), x.limit = c(0, 1),
+  seed = 539, out.path = getwd(), model.vec = NULL)
 }
 \arguments{
 \item{dt}{the full dataset to be loaded and used as a template for the simulation}

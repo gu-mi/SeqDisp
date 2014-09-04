@@ -5,7 +5,7 @@ Title: Evaluations of Negative Binomial Dispersion Models for RNA Sequencing
 Description: An R package for evaluating the negative binomial dispersions
     models commonly used in RNA-Seq data analysis.
 Version: 0.1.6
-Date: 2014-08-24
+Date: 2014-09-03
 License: GPL-2
 Author: Gu Mi <neo.migu@gmail.com>, Yanming Di <diy@stat.oregonstate.edu>,
     Daniel Schafer <schafer@science.oregonstate.edu>

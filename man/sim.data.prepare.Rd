@@ -16,7 +16,7 @@ sim.data.prepare(dt = NULL, sub.col = 1:6, grp.ids = c(rep(1,
 
 \item{grp.ids}{group ids to distinguish between the two groups}
 
-\item{disp}{the dispersion type to be simulated. Specify "Linear", "Quadratic" or "Non-parametric"}
+\item{disp}{the dispersion type to be simulated. Specify "Quadratic" by default}
 
 \item{method}{estimation method for dispersion, either "ML" or "MAPL" (default is "MAPL")}
 

@@ -10,7 +10,7 @@
 #' 
 #' @param grp.ids  group ids to distinguish between the two groups
 #' 
-#' @param disp  the dispersion type to be simulated. Specify "Linear", "Quadratic" or "Non-parametric"
+#' @param disp  the dispersion type to be simulated. Specify "Quadratic" by default
 #' 
 #' @param method  estimation method for dispersion, either "ML" or "MAPL" (default is "MAPL")
 #' 
@@ -135,7 +135,7 @@ sim.data.prepare2 = function(dt=NULL,
     }
   }
   
-  # generate responses from Linear, Quadratic or Non-parametric dispersion models
+  # generate responses from Quadratic dispersion model
   set.seed(seed)
   y = rnbinom(m * n, mu=mu, size=1/phi)
   dim(y) = dim(mu)
