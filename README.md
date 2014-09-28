@@ -30,6 +30,7 @@ We provide (Dropbox) links below to download R source codes and related supporti
 * Figure 8 -- MA plots for the trended, genewise, tagwise-trend and QLSpline methods performed on the mouse dataset: [Download R files and results](https://www.dropbox.com/sh/yu8re67rf0xg3zs/AAAW14SuhAqbHEciHlwf7NuEa?dl=0)
 * Figure 9 -- Estimation accuracy of sigma.hat: [Download R file and results](https://www.dropbox.com/sh/qwefw68cgoyxkto/AABrNZaxl4yuumfq_0NByMyqa?dl=0)
 * Figure 10 -- The calibration plot for estimating residual dispersion variation sigma for the mouse dataset: [Download R file and results](https://www.dropbox.com/sh/8w32v7yr7llr8bw/AACFQ9HRsO7wYIJlcGX3Ey6La?dl=0)
+* SI Figure 5 -- Relationship between sigma.hat (using the approach discussed in the main text) and d_0.hat (prior degrees of freedom) discussed in Chen et al. (2014): [Download R file and results](https://www.dropbox.com/sh/7r7vhsf8l3rln20/AAAx-B2anE-lzlBM5gSFE2ePa?dl=0)
 
 ### Tables
 * Table 1 -- The proportion of variation in log(phi_MOM) explained by the fitted gamma log-linear, quadratic and cubic regression models: [Download R file](https://www.dropbox.com/s/xpln6q881lf35z2/Table1.R?dl=0)
