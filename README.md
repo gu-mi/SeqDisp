@@ -7,7 +7,7 @@ SeqDisp
 
 ******
 
-We provide (Dropbox) links below to download R source codes and related supporting files for preparing the datasets and reproducing figures/tables in the manuscript. Some intermediate key results are also provided when necessary.
+We provide (Dropbox) links below to download R source codes and related supporting files for preparing the datasets and reproducing figures/tables in the manuscript. Some intermediate key results are also provided when necessary. For the packages and functions we used to produce these results, we acknowledge the package authors and their published works. The R/Bioconductor packages imported by `SeqDisp` include `NBPSeq`, `edgeR`, `QuasiSeq`, `splines`, `numDeriv`, `plyr`, `dplyr`, `ggplot2`, `scales`, and `grid`.
 
 ### Data Preparations
 
