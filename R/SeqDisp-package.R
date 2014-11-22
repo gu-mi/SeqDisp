@@ -1,5 +1,5 @@
 ################################################################################
-## Copyright (C) 2014 Gu Mi <mig@stat.oregonstate.edu>
+## Copyright (C) 2014 Gu Mi <neo.migu@gmail.com>
 ## 
 ## This program is free software; you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -61,6 +61,6 @@ NULL
   suppressMessages(library(scales))
   suppressMessages(library(grid))
   #
-  message("\n For updates of the SeqDisp package, please visit https://github.com/gu-mi/SeqDisp \n")
+  message("\n For updates of the SeqDisp package (licensed under GPL-2), please visit https://github.com/gu-mi/SeqDisp \n")
 }  
 
