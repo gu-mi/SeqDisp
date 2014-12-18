@@ -3,7 +3,7 @@ SeqDisp
 
 ### The Level of Residual Dispersion Variation and the Power of Differential Expression Tests for RNA-Seq Data
 
-`SeqDisp` is an R package for evaluating the negative binomial dispersions methods commonly used in RNA-Seq data analysis. The methodologies are discussed in the manuscript **The Level of Residual Dispersion Variation and the Power of Differential Expression Tests for RNA-Seq Data** (by Gu Mi and Yanming Di, PLOS ONE, under review). Functions in `SeqDisp` have been used to generate all figures and tables displayed in the manuscript, plus some additional analysis tools for further investigations.
+`SeqDisp` is an R package for evaluating the negative binomial dispersions methods commonly used in RNA-Seq data analysis. The methodologies are discussed in the manuscript **The Level of Residual Dispersion Variation and the Power of Differential Expression Tests for RNA-Seq Data** (by Gu Mi and Yanming Di, PLOS ONE, under review). Functions in `SeqDisp` have been used to generate all figures and tables displayed in the manuscript, plus some additional analysis tools for further investigations. The `SeqDisp` R package is licensed under [GPL-2](http://cran.r-project.org/web/licenses/GPL-2).
 
 ******
 
